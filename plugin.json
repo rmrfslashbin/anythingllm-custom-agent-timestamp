@@ -1,0 +1,42 @@
+{    
+    "active": true,
+   
+    "hubId": "timestamp",
+   
+    "name": "Get timestamp",
+   
+    "schema": "skill-1.0.0",
+    "version": "0.0.1",
+    "description": "Returns the current timestamp from the OS",
+    "author": "@rmrfslashbin",
+    "author_url": "https://github.com/rmrfslashbin",
+    "license": "MIT",
+   
+    "setup_args": {},
+   
+    "examples": [
+      {
+        "prompt": "What is the curent time?",
+        "call": "{}"
+      },
+      {
+        "prompt": "What is the current date?",
+        "call": "{}"
+      },
+      {
+        "prompt": "What is the current date and time?",
+        "call": "{}"
+      },
+      {
+        "prompt": "What time is it?",
+        "call": "{}"
+      }
+    ],
+   
+    "entrypoint": {
+      "file": "handler.js",
+      "params": {}
+    },
+   
+    "imported": true
+  }
