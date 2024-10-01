@@ -6,8 +6,8 @@
     "name": "Get timestamp",
    
     "schema": "skill-1.0.0",
-    "version": "0.0.1",
-    "description": "Returns the current timestamp from the OS",
+    "version": "1.0.0",
+    "description": "Returns the current timestamp and locale from the OS",
     "author": "@rmrfslashbin",
     "author_url": "https://github.com/rmrfslashbin",
     "license": "MIT",

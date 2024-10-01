@@ -13,7 +13,8 @@ module.exports.runtime = {
         // Run the tool
         return JSON.stringify({
             // return the current time in ISO format
-            "currentUTCTimeISO": this._getCurrentUTCTimeISO()
+            "currentUTCTimeISO": this._getCurrentUTCTimeISO(),
+            "userDeviceTimezone": this._getCurrentTimezone()
         });
       } catch (e) {
         // If the tool fails, let the user know
@@ -34,5 +35,8 @@ module.exports.runtime = {
     // This is a helper function that returns the current time in ISO format
     _getCurrentUTCTimeISO() {
         return new Date().toISOString();
+    },
+    _getCurrentTimezone() {
+      return Intl.DateTimeFormat().resolvedOptions().timeZone;
     },
 };
